@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
+<title>ONYX OPTIMIZER™ — Performance sem limites</title>
+<style>
+:root{--bg:#080808;--panel:#101010;--panel2:#151515;--text:#f5f5f5;--muted:#999;--line:#262626;--white:#fff;--max:1160px}
+*{box-sizing:border-box}
+body{-webkit-user-select:none;user-select:none}
+input,textarea,[contenteditable="true"]{-webkit-user-select:text;user-select:text}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(8,8,8,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:900;letter-spacing:.11em;font-size:15px;display:flex;align-items:center;gap:11px}.mark{width:29px;height:29px;border:1px solid #aaa;border-radius:9px;display:grid;place-items:center;font-size:15px}
+.links{display:flex;gap:27px;color:#aaa;font-size:13px}.links a:hover{color:#fff}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #eee;background:#f4f4f4;color:#080808;padding:12px 19px;border-radius:7px;font-weight:800;font-size:13px;transition:.2s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);background:#fff}
+.menu{display:none;background:none;border:1px solid #333;color:white;border-radius:7px;padding:8px 11px}
+.hero{position:relative;overflow:hidden;padding:112px 0 90px;text-align:center;background:radial-gradient(ellipse at 50% 0%,#242424 0%,#101010 30%,#080808 70%)}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(to bottom,black,transparent 85%);pointer-events:none}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #333;border-radius:99px;padding:7px 12px;color:#bbb;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.dot{width:6px;height:6px;background:#eee;border-radius:50%;box-shadow:0 0 12px #fff}
+h1{font-size:clamp(42px,7vw,82px);line-height:1.02;letter-spacing:-.065em;margin:26px auto 20px;max-width:900px;font-weight:900}h1 span{color:#777}.hero p{max-width:620px;margin:0 auto;color:#aaa;font-size:16px}.actions{display:flex;justify-content:center;gap:12px;margin-top:30px;flex-wrap:wrap}.btn.secondary{background:transparent;color:#eee;border-color:#444}.subnote{margin-top:19px;color:#777;font-size:11px;letter-spacing:.04em}
+.dashboard{max-width:850px;margin:65px auto 0;padding:12px;border:1px solid #333;border-radius:14px;background:linear-gradient(145deg,#191919,#0d0d0d);box-shadow:0 35px 100px #000}
+.dash-top{display:flex;justify-content:space-between;align-items:center;padding:8px 10px 17px;color:#aaa;font-size:11px}.lights{display:flex;gap:5px}.lights i{width:7px;height:7px;border-radius:50%;background:#555}.dash-content{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:10px}.metric{background:#111;border:1px solid #252525;border-radius:9px;padding:18px;text-align:left}.metric small{color:#777;font-size:10px;text-transform:uppercase;letter-spacing:.1em}.metric strong{display:block;font-size:27px;margin-top:7px;letter-spacing:-.04em}.metric em{font-style:normal;color:#aaa;font-size:10px}.bars{height:58px;display:flex;align-items:end;gap:5px;margin-top:13px}.bars i{display:block;flex:1;background:linear-gradient(#ddd,#777);border-radius:3px 3px 0 0;opacity:.8}
+.trust{padding:26px 0;border-bottom:1px solid var(--line);border-top:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}.trust strong{display:block;font-size:14px}.trust span{font-size:11px;color:#777}
+section{padding:92px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 42px}.kicker{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.18em;font-weight:800}.section-head h2{font-size:clamp(30px,4vw,48px);line-height:1.1;letter-spacing:-.045em;margin:13px 0}.section-head p{color:#888;margin:0}
+.games{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.game{border:1px solid var(--line);background:linear-gradient(145deg,#151515,#0d0d0d);padding:20px;border-radius:10px;min-height:155px;display:flex;flex-direction:column;justify-content:space-between}.game .symbol{font-size:24px;color:#ddd}.game strong{font-size:15px}.game small{color:#777;font-size:11px}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature{background:var(--panel);border:1px solid var(--line);padding:25px;border-radius:11px}.feature .ico{width:36px;height:36px;border:1px solid #444;border-radius:9px;display:grid;place-items:center;margin-bottom:24px;color:#eee}.feature h3{font-size:16px;margin:0 0 8px}.feature p{font-size:13px;color:#888;margin:0}
+.compare{background:#0d0d0d;border-block:1px solid var(--line)}.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.compare-card{border:1px solid #303030;background:#111;border-radius:12px;padding:25px}.compare-card h3{margin:0 0 20px;font-size:16px}.compare-card ul{list-style:none;padding:0;margin:0;display:grid;gap:13px}.compare-card li{color:#aaa;font-size:13px;display:flex;gap:10px}.compare-card li b{color:#eee}.tick{color:#eee}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border-top:1px solid #555;padding:22px 4px}.step .num{font-size:11px;color:#777;letter-spacing:.15em}.step h3{font-size:18px;margin:14px 0 6px}.step p{font-size:13px;color:#888;margin:0}
+.community{padding:65px 0}.community-box{border:1px solid #333;border-radius:14px;padding:48px 30px;text-align:center;background:radial-gradient(ellipse at 50% 100%,#252525,#101010 65%)}.community-box h2{font-size:clamp(28px,4vw,43px);margin:0 0 10px;letter-spacing:-.04em}.community-box p{color:#999;max-width:540px;margin:0 auto 24px;font-size:14px}
+.faq{max-width:790px;margin:auto}.faq details{border-bottom:1px solid #292929;padding:19px 2px;overflow:clip;interpolate-size:allow-keywords;transition:padding .28s ease}
+.faq details::details-content{block-size:0;overflow:hidden;transition:block-size .28s ease,content-visibility .28s allow-discrete}
+.faq details[open]::details-content{block-size:auto}.faq summary{cursor:pointer;font-weight:700;font-size:14px;list-style:none;display:flex;justify-content:space-between;gap:20px}.faq summary:after{content:"+";color:#999;font-size:19px}.faq details[open] summary:after{content:"−"}.faq p{color:#888;font-size:13px;margin:13px 0 0}
+.faq details p{animation:faqReveal .28s ease both}
+@keyframes faqReveal{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:#777;font-size:11px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:#ddd;letter-spacing:.1em}
+@media(max-width:800px){.links{display:none;position:absolute;top:76px;left:0;right:0;background:#0b0b0b;padding:20px;flex-direction:column;border-bottom:1px solid #333}.links.open{display:flex}.menu{display:block}.nav-cta{margin-left:auto}.games{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:repeat(2,1fr)}.dash-content{grid-template-columns:1fr 1fr}.metric:first-child{grid-column:span 2}.steps{grid-template-columns:1fr}.hero{padding:85px 0 65px}}
+@media(max-width:520px){.wrap{width:min(100% - 28px,var(--max))}.nav{height:66px}.links{top:66px}.nav-cta{padding:10px 12px;font-size:11px}.brand{font-size:12px}.hero{padding-top:70px}.hero p{font-size:14px}.dashboard{margin-top:42px}.games,.feature-grid,.compare-grid{grid-template-columns:1fr}.trust-grid{grid-template-columns:1fr;gap:15px}.trust-grid>div{display:flex;justify-content:center;align-items:center;gap:8px}.trust strong{font-size:12px}.trust span{font-size:10px}.metric strong{font-size:23px}section{padding:70px 0}.community-box{padding:35px 18px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio"><span class="mark">✳</span> ONYX OPTIMIZER™</a>
+    <nav class="links" id="navLinks"><a href="#recursos">Recursos</a><a href="#comparacao">Por que ONYX</a><a href="#como-funciona">Como funciona</a><a href="#comunidade">Comunidade</a><a href="#faq">FAQ</a></nav>
+    <a class="nav-cta" href="#comunidade">Entrar na comunidade ↗</a>
+    <button class="menu" id="menuBtn" aria-label="Abrir menu">☰</button>
+  </div>
+</header>
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span> PERFORMANCE • CONTROLE • SIMPLICIDADE</div>
+      <h1>Seu PC. Seu jogo.<br><span>Seu melhor desempenho.</span></h1>
+      <p>Uma experiência de otimização pensada para quem joga. Ajustes claros, ferramentas úteis e controle sobre cada mudança.</p>
+      <div class="actions"><a class="btn" href="#comunidade">Conhecer o ONYX ↗</a><a class="btn secondary" href="#recursos">Explorar recursos ↓</a></div>
+      <div class="subnote">INTERFACE CONCEITUAL · SEM PROMESSAS DE FPS GARANTIDO</div>
+      <div class="dashboard">
+        <div class="dash-top"><span>ONYX / PERFORMANCE OVERVIEW</span><span class="lights"><i></i><i></i><i></i></span></div>
+        <div class="dash-content">
+          <div class="metric"><small>System status</small><strong>READY</strong><em>Seu setup em foco</em><div class="bars"><i style="height:32%"></i><i style="height:48%"></i><i style="height:41%"></i><i style="height:72%"></i><i style="height:55%"></i><i style="height:85%"></i><i style="height:66%"></i><i style="height:94%"></i></div></div>
+          <div class="metric"><small>Controle</small><strong>100%</strong><em>Você decide cada ajuste</em></div>
+          <div class="metric"><small>Perfil</small><strong>GAMING</strong><em>Feito para sua rotina</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="trust"><div class="wrap trust-grid"><div><strong>Controle total</strong><span> · Ajustes explicados</span></div><div><strong>Foco no jogador</strong><span> · Experiência simples</span></div><div><strong>Comunidade</strong><span> · Suporte e novidades</span></div></div></div>
+  <section id="recursos"><div class="wrap">
+    <div class="section-head"><div class="kicker">Feito para jogar</div><h2>Mais clareza em cada ajuste.</h2><p>Uma central para organizar dicas, ferramentas e configurações do seu ambiente de jogo.</p></div>
+    <div class="feature-grid">
+      <article class="feature"><div class="ico">⌘</div><h3>Windows em ordem</h3><p>Boas práticas para manter o sistema organizado e reduzir tarefas desnecessárias.</p></article>
+      <article class="feature"><div class="ico">◈</div><h3>Perfis de jogo</h3><p>Reúna configurações e recomendações para os jogos que você mais utiliza.</p></article>
+      <article class="feature"><div class="ico">▥</div><h3>Monitoramento</h3><p>Acompanhe indicadores do computador e entenda o comportamento do seu setup.</p></article>
+      <article class="feature"><div class="ico">↗</div><h3>Guias objetivos</h3><p>Instruções diretas para configurar seu PC sem complicar o processo.</p></article>
+      <article class="feature"><div class="ico">⛨</div><h3>Controle e segurança</h3><p>Entenda o que cada configuração altera antes de decidir aplicá-la.</p></article>
+      <article class="feature"><div class="ico">◎</div><h3>Suporte da comunidade</h3><p>Compartilhe dúvidas, setups e experiências com outros jogadores.</p></article>
+    </div>
+  </div></section>
+  <section class="compare" id="comparacao"><div class="wrap">
+    <div class="section-head"><div class="kicker">A diferença está no controle</div><h2>Menos mistério. Mais informação.</h2><p>O objetivo não é prometer números mágicos: é ajudar você a entender seu PC e fazer escolhas melhores.</p></div>
+    <div class="compare-grid">
+      <div class="compare-card"><h3>Sem organização</h3><ul><li>— <span>Configurações espalhadas</span></li><li>— <span>Dificuldade para lembrar mudanças</span></li><li>— <span>Dicas genéricas para qualquer PC</span></li><li>— <span>Expectativas sem medição</span></li></ul></div>
+      <div class="compare-card"><h3>Com ONYX <span class="tick">✦</span></h3><ul><li><b>✓</b> <span>Recursos reunidos em um só lugar</span></li><li><b>✓</b> <span>Mais contexto sobre cada ajuste</span></li><li><b>✓</b> <span>Orientações para seu cenário</span></li><li><b>✓</b> <span>Incentivo a medir antes e depois</span></li></ul></div>
+    </div>
+  </div></section>
+  <section id="como-funciona"><div class="wrap">
+    <div class="section-head"><div class="kicker">Comece em minutos</div><h2>Simples do início ao fim.</h2><p>Conheça a comunidade e explore os conteúdos no seu ritmo.</p></div>
+    <div class="steps">
+      <article class="step"><div class="num">01 / ENTRE</div><h3>Faça parte</h3><p>Acesse a comunidade ONYX e confira os canais disponíveis.</p></article>
+      <article class="step"><div class="num">02 / EXPLORE</div><h3>Encontre seu caminho</h3><p>Veja os guias e recursos relacionados ao seu computador e aos seus jogos.</p></article>
+      <article class="step"><div class="num">03 / ACOMPANHE</div><h3>Meça os resultados</h3><p>Compare seu desempenho com consistência e mantenha apenas o que fizer sentido.</p></article>
+    </div>
+  </div></section>
+  <section class="community" id="comunidade"><div class="wrap"><div class="community-box">
+    <div class="kicker">ONYX COMMUNITY</div><h2>Seu próximo upgrade começa aqui.</h2><p>Entre para acompanhar novidades, trocar ideias sobre setups e receber ajuda da comunidade.</p>
+    <!-- Troque o # pelo convite permanente do seu servidor Discord -->
+    <a class="btn" href="https://discord.gg/CtjjRVqyJr" target="_blank" rel="noopener">Entrar no Discord ↗</a>
+  </div></div></section>
+  <section id="faq"><div class="wrap"><div class="section-head"><div class="kicker">Dúvidas frequentes</div><h2>Antes de começar.</h2></div>
+    <div class="faq">
+      <details><summary>O ONYX garante mais FPS?</summary><p>Não. O desempenho depende do hardware, dos jogos, dos drivers e das configurações. Nenhum ganho específico é garantido.</p></details>
+      <details><summary>É compatível com qualquer computador?</summary><p>As recomendações podem variar conforme o sistema e os componentes. Confira os requisitos de cada ferramenta antes de utilizá-la.</p></details>
+      <details><summary>As alterações podem afetar o Windows?</summary><p>Alterações de sistema podem ter efeitos diferentes em cada computador. Leia as instruções, faça backup e crie um ponto de restauração antes de mudar configurações.</p></details>
+      <details><summary>Onde encontro suporte?</summary><p>O suporte e as novidades serão publicados na comunidade oficial do ONYX.</p></details>
+    </div>
+  </div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>✳ ONYX OPTIMIZER™</strong><br>Performance com clareza e controle.</div><div>© <span id="year"></span> ONYX OPTIMIZER. Todos os direitos reservados.</div></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+
+// Impede selecionar todo o conteúdo usando Ctrl+A ou Cmd+A.
+document.addEventListener('keydown', (event) => {
+  if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'a') {
+    event.preventDefault();
+  }
+});
+
+// Mantém a navegação entre as seções suave, inclusive com o cabeçalho fixo.
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (!target) return;
+    event.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+const menu=document.getElementById('menuBtn'),links=document.getElementById('navLinks');
+menu.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+</script>
+</body>
+</html>
